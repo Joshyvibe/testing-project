@@ -129,7 +129,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'accounts/static')]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-CSRF_TRUSTED_ORIGINS = ['https://*.https://maddening-lake-adept-loss-production.pipeops.app','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://star-tomatoes-adept-loss-production.pipeops.app']
 
 CSRF_COOKIE_SECURE = True
 
