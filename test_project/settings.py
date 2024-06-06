@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'anwrk',
         'USER': 'anwrk_user',
         'PASSWORD': 'k46vBKMZDBqFg341gGvnlTqBOF695dwD',
-        'HOST': 'postgres://anwrk_user:k46vBKMZDBqFg341gGvnlTqBOF695dwD@dpg-cpgoc8m3e1ms73ajm7tg-a.oregon-postgres.render.com/anwrk',  
+        'HOST': 'dpg-cpgoc8m3e1ms73ajm7tg-a.oregon-postgres.render.com',  
         'PORT': '5432',     
     }
 }
