@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'test_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '6d5d77ab8404385d8662aebcd',
-        'HOST': 'morning-bird.adept-loss-production.svc.pipeops.internal',  
+        'NAME': 'anwrk',
+        'USER': 'anwrk_user',
+        'PASSWORD': 'k46vBKMZDBqFg341gGvnlTqBOF695dwD',
+        'HOST': 'dpg-cpgoc8m3e1ms73ajm7tg-a',  
         'PORT': '5432',     
     }
 }
