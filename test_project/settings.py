@@ -81,14 +81,16 @@ WSGI_APPLICATION = 'test_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'anwrk',
-        'USER': 'anwrk_user',
-        'PASSWORD': 'k46vBKMZDBqFg341gGvnlTqBOF695dwD',
-        'HOST': 'dpg-cpgoc8m3e1ms73ajm7tg-a.oregon-postgres.render.com',  
+        'NAME': 'pipeops',
+        'USER': 'postgres',
+        'PASSWORD': '6d5d77ab8404385d8662aebcd',
+        'HOST': 'morning-bird.adept-loss-production.svc.pipeops.internal',  
         'PORT': '5432',     
     }
 }
 
+      
+      
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
