@@ -13,7 +13,7 @@ def create_superuser_view(request):
     # Implement your authentication logic here
 
     # Call the createsuperuser management command
-    call_command('createsuperuser', username='admin', email='admin@example.com', password='admin', interactive=False)
+    call_command('createsuperuser', username='admin', email='admin@example.com', interactive=False)
 
     # Check if the superuser has been successfully created
     try:
