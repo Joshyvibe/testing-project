@@ -8,19 +8,23 @@ from django.core.management import call_command
 from django.http import JsonResponse
 
 
+
 def create_superuser_view(request):
     # Check if the request is authorized
     # Implement your authentication logic here
 
-    # Call the createsuperuser management command
-    call_command('createsuperuser', username='admin', email='admin@example.com', interactive=False)
+    # Call the createsuperuser management command without the password option
+    call_command('createsuperuser', username='admin1', email='admin@admin.com', interactive=False)
 
-    # Check if the superuser has been successfully created
+    # Set the password for the superuser
     try:
-        user = User.objects.get(username='admin')
+        user = User.objects.get(username='admin1')
+        user.set_password('admin')  # Set the desired password here
+        user.save()
         return JsonResponse({'message': 'Superuser created successfully', 'user': {'username': user.username, 'email': user.email}})
     except User.DoesNotExist:
         return JsonResponse({'message': 'Failed to create superuser'}, status=500)
+
 
 
 def home(request):
